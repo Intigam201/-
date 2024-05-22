@@ -1,0 +1,73 @@
+
+1. Написать программу, которая принимает на вход два целых числа (a и b) и совершает с ними следующие действия:
+- сравнивает эти два числа и возвращает результат сравнения путем вывода в консоль одного из вариантов: "a > b", "a < b" или "a = b";
+- совершает с этими числами операции сложения, вычитания, деления и умножения и результат выводит в консоль.
+
+Решение:
+
+public class Main {
+
+   public static void main(String[] args) {
+
+       int a = 999;
+       int b = 33;
+
+       System.out.println(a+b);
+       System.out.println(a-b);
+       System.out.println(a*b);
+       System.out.println(a/b);
+       System.out.println(a>b);
+       System.out.println(a<b);
+       System.out.println(a=b);
+
+
+
+   }
+}
+
+
+
+2. Написать программу, которая принимает на вход две строки (a и b) и сравнивает их. 
+В результате сравнения в консоль должно быть выведено одно из сообщений: "Строки неидентичны" или "Строки идентичны"
+
+Решение:
+class TestClass{
+  public static void main (String[] args){
+    
+   String str1 = "Java";
+ String str2 = "Java";
+ String str3 = "C++";
+
+
+ if (str1.equals(str2)) {
+     System.out.println("Строки идентичны");
+ } else {
+     System.out.println("Строки неидентичны ");
+ }
+ 
+
+ if(str1.equals(str3)) {
+     System.out.println("Строки идентичны ");
+ } else {
+     System.out.println("Строки неидентичны ");
+ }
+
+
+
+
+3. Задан массив целых чисел: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Необходимо написать программу, которая выведет в консоль все чётные числа. 
+
+
+public class Main {
+    public static void main(String[] args) {
+        int[] evenNumbers = new int[10];
+        int count = 0;
+        for (int i = 2; i <= 10; i += 2) {
+            evenNumbers[count] = i;
+            count++;
+        }
+        for (int i = 0; i < evenNumbers.length; i++) {
+            System.out.println(evenNumbers[i]);
+        }
+    }
+}
